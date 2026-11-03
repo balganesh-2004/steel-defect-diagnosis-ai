@@ -1,0 +1,21 @@
+{
+  "project_name": "AI-Driven Multi-Stage Steel Defect Diagnosis",
+  "phase": "Phase 1 - Environment and Dataset Foundation",
+  "random_seed": 42,
+  "dataset": {
+    "name": "NEU-DET / NEU steel surface defect dataset",
+    "root": "data/raw/NEU-DET",
+    "expected_classes": [
+      "crazing",
+      "inclusion",
+      "patches",
+      "pitted_surface",
+      "rolled-in_scale",
+      "scratches"
+    ]
+  },
+  "outputs": {
+    "figures": "results/figures",
+    "metrics": "results/metrics"
+  }
+}

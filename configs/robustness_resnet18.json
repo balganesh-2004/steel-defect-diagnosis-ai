@@ -1,0 +1,52 @@
+{
+  "experiment_name": "robustness_resnet18",
+  "checkpoint_path": "checkpoints/baseline_resnet18_no_aug/best_validation_model.pt",
+  "test_manifest": "data/splits/seed_42_70_15_15/test.csv",
+  "class_to_index_path": "results/experiments/baseline_resnet18_no_aug/metrics/class_to_index.json",
+  "output_dir": "results/experiments/robustness_resnet18",
+  "random_seed": 42,
+  "expected_clean": {
+    "accuracy": 0.9962962962962963,
+    "correct": 269,
+    "incorrect": 1
+  },
+  "preprocessing": {
+    "input_size": 224,
+    "normalization": {
+      "mean": [0.485, 0.456, 0.406],
+      "std": [0.229, 0.224, 0.225],
+      "source": "ImageNet pretrained torchvision weights"
+    }
+  },
+  "degradations": {
+    "clean": [
+      {"severity": 0, "parameter": "none"}
+    ],
+    "gaussian_noise": [
+      {"severity": 1, "sigma": 10},
+      {"severity": 2, "sigma": 25},
+      {"severity": 3, "sigma": 40}
+    ],
+    "gaussian_blur": [
+      {"severity": 1, "kernel": 3, "sigma": 1.0},
+      {"severity": 2, "kernel": 5, "sigma": 2.0},
+      {"severity": 3, "kernel": 7, "sigma": 3.0}
+    ],
+    "brightness": [
+      {"severity": 1, "factor": 0.7},
+      {"severity": 2, "factor": 1.3},
+      {"severity": 3, "factor": 1.5}
+    ],
+    "contrast": [
+      {"severity": 1, "factor": 0.7},
+      {"severity": 2, "factor": 1.3},
+      {"severity": 3, "factor": 1.5}
+    ]
+  },
+  "notes": [
+    "Evaluation-only robustness experiment.",
+    "No model retraining or fine-tuning is performed.",
+    "Degradations are applied in memory before baseline preprocessing.",
+    "Original NEU-DET images and split manifests are not modified."
+  ]
+}

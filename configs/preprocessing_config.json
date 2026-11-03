@@ -1,0 +1,31 @@
+{
+  "input_size": 224,
+  "normalization": {
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225],
+    "source": "ImageNet pretrained torchvision weights"
+  },
+  "train_transforms": {
+    "resize": 224,
+    "random_rotation_degrees": 10,
+    "horizontal_flip_probability": 0.5,
+    "vertical_flip_probability": 0.5,
+    "color_jitter": {
+      "brightness": 0.15,
+      "contrast": 0.15,
+      "saturation": 0.0,
+      "hue": 0.0
+    }
+  },
+  "validation_transforms": {
+    "resize": 224
+  },
+  "test_transforms": {
+    "resize": 224
+  },
+  "notes": [
+    "All images are converted to RGB for 3-channel pretrained CNN input.",
+    "Validation and test transforms are deterministic and contain no random augmentation.",
+    "Training augmentations are conservative for steel surface images and do not create synthetic labels."
+  ]
+}

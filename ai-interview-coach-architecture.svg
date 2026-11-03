@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7FAFF"/><stop offset="1" stop-color="#EAF2FF"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#274060" flood-opacity=".16"/></filter>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0,0 L11,5.5 L0,11 Z" fill="#61758A"/></marker>
+    <style>
+      .title { font: 700 38px Arial, sans-serif; fill:#12263A; }
+      .subtitle { font: 400 18px Arial, sans-serif; fill:#5B6D7E; }
+      .group { font: 700 22px Arial, sans-serif; fill:#fff; }
+      .box-title { font: 700 19px Arial, sans-serif; fill:#12263A; }
+      .box-text { font: 400 15px Arial, sans-serif; fill:#506273; }
+      .small { font: 400 14px Arial, sans-serif; fill:#506273; }
+      .line { stroke:#61758A; stroke-width:3; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="800" y="60" text-anchor="middle" class="title">AI Interview Coach — System Architecture</text>
+  <text x="800" y="91" text-anchor="middle" class="subtitle">Flutter/Dart mobile app with Firebase and AI service integration</text>
+
+  <!-- group headers -->
+  <rect x="80" y="145" width="420" height="52" rx="16" fill="#2563EB"/>
+  <text x="290" y="179" text-anchor="middle" class="group">Flutter Mobile Application</text>
+  <rect x="590" y="145" width="420" height="52" rx="16" fill="#7C3AED"/>
+  <text x="800" y="179" text-anchor="middle" class="group">Backend &amp; Firebase Services</text>
+  <rect x="1100" y="145" width="420" height="52" rx="16" fill="#0F766E"/>
+  <text x="1310" y="179" text-anchor="middle" class="group">AI Processing Services</text>
+
+  <!-- mobile boxes -->
+  <g filter="url(#shadow)"><rect x="80" y="225" width="420" height="102" rx="18" fill="#fff"/><rect x="80" y="225" width="9" height="102" rx="4" fill="#2563EB"/></g>
+  <text x="112" y="265" class="box-title">Flutter UI (Dart)</text><text x="112" y="292" class="box-text">Android &amp; iOS user interface</text>
+  <g filter="url(#shadow)"><rect x="80" y="357" width="195" height="113" rx="18" fill="#fff"/><rect x="80" y="357" width="8" height="113" rx="4" fill="#60A5FA"/></g>
+  <text x="106" y="397" class="box-title">Resume Upload</text><text x="106" y="424" class="box-text">PDF / DOCX / Text</text>
+  <g filter="url(#shadow)"><rect x="305" y="357" width="195" height="113" rx="18" fill="#fff"/><rect x="305" y="357" width="8" height="113" rx="4" fill="#60A5FA"/></g>
+  <text x="331" y="397" class="box-title">Chat &amp; Voice</text><text x="331" y="424" class="box-text">Interview Practice</text>
+  <g filter="url(#shadow)"><rect x="80" y="500" width="420" height="102" rx="18" fill="#fff"/><rect x="80" y="500" width="9" height="102" rx="4" fill="#2563EB"/></g>
+  <text x="112" y="540" class="box-title">Feedback &amp; Progress Report</text><text x="112" y="567" class="box-text">Scores, strengths and improvement suggestions</text>
+
+  <!-- backend boxes -->
+  <g filter="url(#shadow)"><rect x="590" y="225" width="420" height="102" rx="18" fill="#fff"/><rect x="590" y="225" width="9" height="102" rx="4" fill="#7C3AED"/></g>
+  <text x="622" y="265" class="box-title">Cloud Functions / Node.js API</text><text x="622" y="292" class="box-text">Secure request processing and orchestration</text>
+  <g filter="url(#shadow)"><rect x="590" y="357" width="195" height="113" rx="18" fill="#fff"/><rect x="590" y="357" width="8" height="113" rx="4" fill="#A78BFA"/></g>
+  <text x="616" y="397" class="box-title">Firebase Auth</text><text x="616" y="424" class="box-text">User login</text>
+  <g filter="url(#shadow)"><rect x="815" y="357" width="195" height="113" rx="18" fill="#fff"/><rect x="815" y="357" width="8" height="113" rx="4" fill="#A78BFA"/></g>
+  <text x="841" y="397" class="box-title">Cloud Storage</text><text x="841" y="424" class="box-text">Resume files</text>
+  <g filter="url(#shadow)"><rect x="590" y="500" width="420" height="102" rx="18" fill="#fff"/><rect x="590" y="500" width="9" height="102" rx="4" fill="#7C3AED"/></g>
+  <text x="622" y="540" class="box-title">Cloud Firestore</text><text x="622" y="567" class="box-text">Profiles, questions, answers and feedback</text>
+
+  <!-- AI boxes -->
+  <g filter="url(#shadow)"><rect x="1100" y="225" width="420" height="102" rx="18" fill="#fff"/><rect x="1100" y="225" width="9" height="102" rx="4" fill="#0F766E"/></g>
+  <text x="1132" y="265" class="box-title">LLM API: OpenAI / Gemini</text><text x="1132" y="292" class="box-text">Natural-language intelligence layer</text>
+  <g filter="url(#shadow)"><rect x="1100" y="357" width="195" height="113" rx="18" fill="#fff"/><rect x="1100" y="357" width="8" height="113" rx="4" fill="#2DD4BF"/></g>
+  <text x="1126" y="397" class="box-title">Resume Analysis</text><text x="1126" y="424" class="box-text">Skills &amp; keywords</text>
+  <g filter="url(#shadow)"><rect x="1325" y="357" width="195" height="113" rx="18" fill="#fff"/><rect x="1325" y="357" width="8" height="113" rx="4" fill="#2DD4BF"/></g>
+  <text x="1351" y="397" class="box-title">Question Engine</text><text x="1351" y="424" class="box-text">Personalized Q&amp;A</text>
+  <g filter="url(#shadow)"><rect x="1100" y="500" width="420" height="102" rx="18" fill="#fff"/><rect x="1100" y="500" width="9" height="102" rx="4" fill="#0F766E"/></g>
+  <text x="1132" y="540" class="box-title">Answer Evaluation Engine</text><text x="1132" y="567" class="box-text">Score, STAR feedback and suggestions</text>
+
+  <!-- connections -->
+  <path d="M500 276 H590" class="line"/><text x="545" y="260" text-anchor="middle" class="small">API requests</text>
+  <path d="M1010 276 H1100" class="line"/><text x="1055" y="260" text-anchor="middle" class="small">AI prompt</text>
+  <path d="M177 327 V357" class="line"/><path d="M402 327 V357" class="line"/>
+  <path d="M290 470 V500" class="line"/>
+  <path d="M687 327 V357" class="line"/><path d="M912 327 V357" class="line"/>
+  <path d="M800 470 V500" class="line"/>
+  <path d="M1197 327 V357" class="line"/><path d="M1422 327 V357" class="line"/>
+  <path d="M1310 470 V500" class="line"/>
+  <path d="M500 551 H590" class="line"/><text x="545" y="535" text-anchor="middle" class="small">save results</text>
+  <path d="M1010 551 H1100" class="line"/><text x="1055" y="535" text-anchor="middle" class="small">evaluate answer</text>
+
+  <!-- footer -->
+  <rect x="80" y="690" width="1440" height="120" rx="20" fill="#12263A"/>
+  <text x="800" y="735" text-anchor="middle" style="font:700 23px Arial,sans-serif;fill:#fff">Workflow: Resume → AI Analysis → Personalized Questions → Chat / Voice Answer → Feedback Report</text>
+  <text x="800" y="773" text-anchor="middle" style="font:400 17px Arial,sans-serif;fill:#C5D3E0">Firebase and AI API integrations can be presented as proposed future implementation during Review 1.</text>
+</svg>

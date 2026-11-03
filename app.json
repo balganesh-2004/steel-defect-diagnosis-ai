@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "AI Interview Coach",
+    "slug": "ai-interview-coach",
+    "scheme": "aiinterviewcoach",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#09111f"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.aiinterviewcoach.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.aiinterviewcoach.app"
+    }
+  }
+}

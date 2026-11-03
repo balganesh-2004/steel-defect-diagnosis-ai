@@ -1,0 +1,37 @@
+{
+  "dataset_root": "data/raw/NEU-DET",
+  "output_dir": "data/splits/seed_42_70_15_15",
+  "random_seed": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "expected_classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "image_extensions": [
+    ".bmp",
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".tif",
+    ".tiff"
+  ],
+  "manifest_columns": [
+    "image_path",
+    "class",
+    "annotation_path",
+    "source_split"
+  ],
+  "notes": [
+    "The original dataset files are not modified, moved, or duplicated.",
+    "Splits are stored as metadata manifests with relative paths.",
+    "Only images with exactly one matching XML annotation are included."
+  ]
+}
